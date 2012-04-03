@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#cfHtmlSnippet_dlg.title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/cfHtmlSnippet.js"></script>
+</head>
+<body>
+	<form onsubmit="cfHtmlSnippetDialog.insert();return false;" action="#">
+		<p><label for="cfHtmlSnippetCode">{#cfHtmlSnippet_dlg.url_field}</label></p>
+	    <p><textarea id="cfHtmlSnippetCode" name="cfHtmlSnippetCode" class="text" style="width:100%" rows="5" /></textarea></p>
+		<div class="mceActionPanel">
+			<input type="button" id="insert" name="insert" value="{#insert}" onclick="cfHtmlSnippetDialog.insert();" />
+			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+		</div>
+	</form>
+</body>
+</html>
