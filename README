@@ -1,0 +1,16 @@
+Sorry if something is not cool, this is my first git repo and first tinymce 3.x plugin. 
+
+The plugin is a quick way i created for some of clients so they can copypaste embed codes for videos on their websites without having to understand what HTML is. 
+
+1) So copy the plugin to the TinyMCE plugin folder.
+
+2) Enable the plugin by placing cfhtmlsnippet in "plugins" configuration so it is something like this
+plugins: "style,advimage,[...],cfhtmlsnippet"
+and add cfhtmlsnippet to the toolbar under theme options if you have custom toolbar like this:
+theme_advanced_buttons1 : 'bold,italic,underline,strikethrough,[...],cfhtmlsnippet'
+
+Usage
+Nothing hard - click on the snippet button (rotatet <br/> tag), insert snippet (usually youtube, google, facebook or twitter snippet) and it will be instantly inserted where the cursor was.
+
+Licence
+Have no idea. Spread the word
